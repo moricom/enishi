@@ -47,7 +47,7 @@ export const MatchResultStepFragment: React.FC<Props> = ({ matchData, ...props }
                         </LinearLayout>
                         <LinearLayout orientation="vertical">
                             {dataWithFavoritedBy.men.map((x) => (
-                                <LinearLayout gravity="center_left" key={x.id}>
+                                <LinearLayout gravity="center_left" key={x.id} style={{ height: "1.8rem" }}>
                                     <LinearLayout gravity="center" style={{ width: "2rem" }}>
                                         <Typography>{x.name}: </Typography>
                                     </LinearLayout>
@@ -68,7 +68,7 @@ export const MatchResultStepFragment: React.FC<Props> = ({ matchData, ...props }
                         </LinearLayout>
                         <LinearLayout orientation="vertical">
                             {dataWithFavoritedBy.women.map((x) => (
-                                <LinearLayout gravity="center_left" key={x.id}>
+                                <LinearLayout gravity="center_left" key={x.id} style={{ height: "1.8rem" }}>
                                     <LinearLayout gravity="center" style={{ width: "2rem" }}>
                                         <Typography>{x.name}: </Typography>
                                     </LinearLayout>

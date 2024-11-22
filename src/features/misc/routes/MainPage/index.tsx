@@ -5,6 +5,7 @@ import { BsPersonCircle } from "@react-icons/all-files/bs/BsPersonCircle";
 import { styled } from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 
+import { Button } from "@/enishi-ui/components/inputs/Button";
 import { TextField } from "@/enishi-ui/components/inputs/TextField";
 import { LinearLayout } from "@/enishi-ui/components/layout/LinearLayout";
 import { ViewPager } from "@/enishi-ui/components/layout/ViewPager";
@@ -77,10 +78,11 @@ export const MainPage: React.FC = (props) => {
                 Enishi
             </PageHeader>
             <Content>
-                <LinearLayout>
+                <LinearLayout gravity="center_left">
                     <Stepper onChangeStep={setStepIndex} selectedIndex={stepIndex} steps={steps} />
                     <LinearLayout gap="1rem">
                         <TextField
+                            disabled={stepIndex === 1}
                             labelText="男性"
                             onChange={(c) => {
                                 const count = parseInt(c, 10);
@@ -100,6 +102,7 @@ export const MainPage: React.FC = (props) => {
                             value={data.men.length.toString()}
                         />
                         <TextField
+                            disabled={stepIndex === 1}
                             labelText="女性"
                             onChange={(c) => {
                                 const count = parseInt(c, 10);
@@ -121,6 +124,28 @@ export const MainPage: React.FC = (props) => {
                             type="number"
                             value={data.women.length.toString()}
                         />
+                    </LinearLayout>
+                    <LinearLayout gravity="center" style={{ marginLeft: "1rem" }}>
+                        {stepIndex === 0 ? (
+                            <Button
+                                colorTheme="primary"
+                                onClick={() => {
+                                    setStepIndex(1);
+                                }}
+                            >
+                                結果表示
+                            </Button>
+                        ) : (
+                            <Button
+                                colorTheme="primary"
+                                onClick={() => {
+                                    setStepIndex(0);
+                                }}
+                                variant="outlined"
+                            >
+                                戻る
+                            </Button>
+                        )}
                     </LinearLayout>
                 </LinearLayout>
                 <ViewPager fullWidth selectedIndex={stepIndex}>
