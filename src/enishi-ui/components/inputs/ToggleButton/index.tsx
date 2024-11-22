@@ -3,7 +3,7 @@ import React from "react";
 import { css, styled } from "styled-components";
 
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 type ColorTheme = "accent" | "error" | "info" | "primary" | "secondary" | "success" | "warning";
 const Host = styled.div<{ $selected: boolean; $colorTheme: ColorTheme }>`
@@ -26,7 +26,7 @@ const Host = styled.div<{ $selected: boolean; $colorTheme: ColorTheme }>`
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     onClick?: () => void;
     selected?: boolean;
     colorTheme?: ColorTheme;

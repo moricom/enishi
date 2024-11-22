@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div`
     width: 100%;
@@ -10,7 +10,7 @@ const Host = styled.div`
     box-sizing: border-box;
 `;
 
-type Props = enishiUIProps;
+type Props = EnishiUIProps;
 
 const PanelContainerHost = ({ children, ...props }: Props, ref: React.Ref<HTMLDivElement>) => (
     <Host ref={ref} {...props}>

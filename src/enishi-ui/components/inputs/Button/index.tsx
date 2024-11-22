@@ -5,7 +5,7 @@ import { css, styled, useTheme } from "styled-components";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
 import { Indicator } from "@/enishi-ui/components/feedback/Indicator";
-import type { ColorTheme, Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, Size, EnishiUIProps } from "@/enishi-ui/components/type";
 
 type Variant = "contained" | "outlined" | "text";
 
@@ -197,7 +197,7 @@ const IconContainer = styled.div<{ $color: string; $size: keyof typeof sizes; $i
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     variant?: Variant;
     colorTheme?: ColorTheme;
     width?: string;

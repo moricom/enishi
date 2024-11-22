@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ $index: number; $selectedIndex: number }>`
     position: relative;
@@ -15,7 +15,7 @@ const Host = styled.div<{ $index: number; $selectedIndex: number }>`
     transform: translate3d(${({ $index, $selectedIndex }) => 100 * ($index - $selectedIndex)}%, 0, 0);
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     index?: number;
     selectedIndex?: number;
 }>;

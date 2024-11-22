@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { Step } from "@/enishi-ui/components/navigation/Stepper/Step";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div`
     display: flex;
@@ -33,7 +33,7 @@ const Border = styled.div<{ $stepCount: number; $selectedIndex: number }>`
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     steps: {
         name: string;
     }[];

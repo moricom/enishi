@@ -4,7 +4,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 type Gravity =
     | "bottom_center"
@@ -89,7 +89,7 @@ const Host = styled.div<{
     gap: ${({ $gap }) => $gap ?? "unset"};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     orientation?: "horizontal" | "vertical";
     gravity?: Gravity;
     fullWidth?: boolean;

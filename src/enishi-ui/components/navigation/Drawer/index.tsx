@@ -2,11 +2,11 @@ import React, { useCallback, useRef, useState } from "react";
 
 import { FloatingWrapper } from "@/enishi-ui/components/navigation/Drawer/FloatingWrapper";
 import { Host } from "@/enishi-ui/components/navigation/Drawer/Host";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import type { SwipeEvent } from "@/enishi-ui/hooks/useSwipe";
 import { useSwipe } from "@/enishi-ui/hooks/useSwipe";
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     open: boolean;
     variant?: "permanent" | "temporary";
     onClose?: () => void;

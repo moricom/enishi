@@ -3,7 +3,7 @@ import React from "react";
 import { css, styled } from "styled-components";
 
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const disabledStyle = css`
@@ -65,7 +65,7 @@ const Host = styled.div<{
         `};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     button?: boolean;
     disabled?: boolean;
     selected?: boolean;

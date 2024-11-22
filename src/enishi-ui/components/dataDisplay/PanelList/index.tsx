@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div`
     display: flex;
@@ -12,7 +12,7 @@ const Host = styled.div`
     padding: 0.1rem;
 `;
 
-type Props = enishiUIProps;
+type Props = EnishiUIProps;
 
 const PanelListHost = ({ children, ...props }: Props, ref: React.ForwardedRef<HTMLDivElement>) => (
     <Host ref={ref} {...props}>

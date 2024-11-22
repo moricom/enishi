@@ -4,7 +4,7 @@ import { css, styled } from "styled-components";
 
 import { Tooltip } from "@/enishi-ui/components/dataDisplay/Tooltip";
 import { Skeleton } from "@/enishi-ui/components/feedback/Skeleton";
-import type { ColorTheme, Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps, Size } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -142,7 +142,7 @@ const CheckMark = styled.div<{ $checked: boolean; $size: Size }>`
     ${({ $checked }) => $checked && checkMarkCheckedStyle};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     label: string;
     backgroundColor?: string;
     loading?: boolean;

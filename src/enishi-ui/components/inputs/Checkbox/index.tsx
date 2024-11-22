@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 
 import { css, styled } from "styled-components";
 
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 import type { DefaultTheme } from "styled-components";
@@ -76,7 +76,7 @@ const Host = styled.span<HostProps>`
         `}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     checked: boolean;
     checkMarkColor?: string;
     noMargin?: boolean;

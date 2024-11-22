@@ -44,7 +44,7 @@ export const MatchRegistrationStepFragment: React.FC<Props> = ({ men, women, onF
                                                 onFavorite("man", x.id, y.id);
                                             }
                                         }}
-                                        size="x-small"
+                                        size="small"
                                         variant="outlined"
                                     >
                                         {y.name}
@@ -81,7 +81,7 @@ export const MatchRegistrationStepFragment: React.FC<Props> = ({ men, women, onF
                                                 onFavorite("woman", x.id, y.id);
                                             }
                                         }}
-                                        size="x-small"
+                                        size="small"
                                         variant="outlined"
                                     >
                                         {y.name}

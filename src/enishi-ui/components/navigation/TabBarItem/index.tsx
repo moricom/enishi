@@ -3,7 +3,7 @@ import React from "react";
 import { styled, useTheme } from "styled-components";
 
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const IconContainer = styled.div`
     > * {
@@ -35,7 +35,7 @@ const Content = styled.div`
 `;
 
 type Props = Omit<
-    enishiUIProps<{
+    EnishiUIProps<{
         selected?: boolean;
         icon?: React.ReactNode | null;
         value: string;

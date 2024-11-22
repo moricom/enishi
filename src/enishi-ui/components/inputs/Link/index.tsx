@@ -3,7 +3,7 @@ import React from "react";
 import { css, styled } from "styled-components";
 
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.a<{ $underline: boolean; $color?: string; $colorTheme: ColorTheme }>`
     color: initial;
@@ -51,7 +51,7 @@ const Host = styled.a<{ $underline: boolean; $color?: string; $colorTheme: Color
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     to: string;
     newTab?: boolean;
     underline?: boolean;

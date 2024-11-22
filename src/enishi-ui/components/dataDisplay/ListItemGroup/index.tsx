@@ -9,7 +9,7 @@ import { Arrow } from "@/enishi-ui/components/dataDisplay/ListItemGroup/Arrow";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
 import { IconButton } from "@/enishi-ui/components/inputs/IconButton";
 import { LinearLayout } from "@/enishi-ui/components/layout/LinearLayout";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Label = styled.div`
     padding-left: 0.2rem;
@@ -27,7 +27,7 @@ const LabelText = styled(Typography)`
 
 const NestedList = styled(List)``;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     label: string;
     indent?: number;
     open?: boolean;

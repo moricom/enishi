@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { css, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useRect } from "@/enishi-ui/hooks/useRect";
 
 import { config } from "@/config";
@@ -44,7 +44,7 @@ const Host = styled.div<{ $x: number; $y: number; $arrow: boolean; $hidden: bool
         `}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     open: boolean;
     targetRect: DOMRect | null;
     arrow?: boolean;

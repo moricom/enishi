@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { Skeleton } from "@/enishi-ui/components/feedback/Skeleton";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ width?: string; height?: string }>`
     min-width: ${({ width }) => width ?? "initial"};
@@ -21,7 +21,7 @@ const Img = styled.img`
     overflow: hidden;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     width?: string;
     height?: string;
     imageSource?: string;

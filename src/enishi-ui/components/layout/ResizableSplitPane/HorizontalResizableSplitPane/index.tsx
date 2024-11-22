@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
 
 import { TopPane } from "@/enishi-ui/components/layout/ResizableSplitPane/TopPane";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ $fullWidth: boolean; $fullHeight: boolean }>`
     height: ${({ $fullHeight }) => ($fullHeight ? "100%" : "initial")};
@@ -39,7 +39,7 @@ const BottomPane = styled.div<{ $fullWidth: boolean }>`
     width: ${({ $fullWidth }) => ($fullWidth ? "100%" : "initial")};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     top: React.ReactElement;
     bottom: React.ReactElement;
     bottomStyle?: React.CSSProperties;

@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { Skeleton } from "@/enishi-ui/components/feedback/Skeleton";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -41,7 +41,7 @@ const Host = styled.div<{ $backgroundColor?: string; $button: boolean; $size: ke
     cursor: ${({ $button }) => ($button ? "pointer" : "default")};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     backgroundColor?: string;
     button: boolean;
     loading?: boolean;

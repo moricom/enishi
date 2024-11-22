@@ -2,7 +2,7 @@ import React from "react";
 
 import { css, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 type ColorTheme = "accent" | "error" | "info" | "primary" | "secondary" | "success" | "warning";
 const Host = styled.div<{
@@ -47,7 +47,7 @@ const Host = styled.div<{
         `}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     top?: string;
     bottom?: string;
     left?: string;

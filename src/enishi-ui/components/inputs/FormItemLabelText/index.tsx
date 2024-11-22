@@ -3,7 +3,7 @@ import React from "react";
 import { styled, useTheme } from "styled-components";
 
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -49,7 +49,7 @@ const Host = styled.div<{ $size: keyof typeof sizes; $empty: boolean; $focused: 
         !$empty || ($empty && $focused) || $withPlaceholder ? "transform: translateX(-18%) translateY(-50%) scale(0.65);" : ""}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     invalid: boolean;
     empty: boolean;
     focused: boolean;

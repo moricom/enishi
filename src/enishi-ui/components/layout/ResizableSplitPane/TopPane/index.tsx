@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ $fullWidth: boolean }>`
     width: ${({ $fullWidth }) => ($fullWidth ? "100%" : "initial")};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     topHeight: number | undefined;
     setTopHeight: (value: number) => void;
     fullWidth?: boolean;

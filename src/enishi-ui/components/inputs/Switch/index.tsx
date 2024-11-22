@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { ColorTheme, Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, Size, EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -92,7 +92,7 @@ const Circle = styled.span<{ $checked: boolean; $size: Size }>`
         $checked ? `calc(100% - ${sizes[$size].circle.width} - ${sizes[$size].circle.marginLeftAndRight} * 2)` : "0"};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     checked?: boolean;
 }>;
 

@@ -5,9 +5,9 @@ import { useTheme } from "styled-components";
 import { Host } from "@/enishi-ui/components/dataDisplay/ListItem/Host";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     disabled?: boolean;
     selected?: boolean;
     indent?: number;

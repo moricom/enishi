@@ -4,7 +4,7 @@ import React, { useCallback } from "react";
 import { css, styled } from "styled-components";
 
 import { ErrorMessage } from "@/enishi-ui/components/dataDisplay/ErrorMessage";
-import type { ColorTheme, Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, Size, EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -91,7 +91,7 @@ const Content = styled.div<ContentProps>`
         `};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     fullWidth?: boolean;
     fullHeight?: boolean;
     noMargin?: boolean;

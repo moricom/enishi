@@ -9,7 +9,7 @@ import { FormItemLabel } from "@/enishi-ui/components/inputs/FormItemLabel";
 import { FormItemLabelText } from "@/enishi-ui/components/inputs/FormItemLabelText";
 import { IconButton } from "@/enishi-ui/components/inputs/IconButton";
 import { InputField } from "@/enishi-ui/components/inputs/TextField/InputField";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useBoolean } from "@/enishi-ui/hooks/useBoolean";
 import { useDetectionAutoFill } from "@/enishi-ui/hooks/useDetectionAutoFill";
 import { usePrevious } from "@/enishi-ui/hooks/usePrevious";
@@ -47,7 +47,7 @@ const IconContainer = styled.div`
     align-items: center;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     name?: string;
     labelText?: string;
     placeholder?: string;

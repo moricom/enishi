@@ -2,7 +2,7 @@ import React from "react";
 
 import { css, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const separateListStyle = css`
     && {
@@ -27,7 +27,7 @@ const Host = styled.ul<{ $fullWidth: boolean; $separateLine: boolean; $gap?: str
     ${({ $separateLine }) => $separateLine && separateListStyle}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     fullWidth?: boolean;
     separateLine?: boolean;
     gap?: string;

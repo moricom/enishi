@@ -2,7 +2,7 @@ import React from "react";
 
 import { css, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const permanentStyle = css`
     && {
@@ -44,7 +44,7 @@ const Content = styled.div`
     height: 100%;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     open: boolean;
     swipeWidth?: number;
     onClick?: React.MouseEventHandler;

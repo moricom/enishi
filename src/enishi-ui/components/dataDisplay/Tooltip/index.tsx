@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { styled } from "styled-components";
 
 import { TooltipPopper } from "@/enishi-ui/components/dataDisplay/Tooltip/TooltipPopper";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHover } from "@/enishi-ui/hooks/useHover";
 import { useRect } from "@/enishi-ui/hooks/useRect";
 
@@ -11,10 +11,10 @@ const Content = styled.div`
     width: fit-content;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     content: React.ReactNode;
     arrow?: boolean;
-    contentProps?: enishiUIProps;
+    contentProps?: EnishiUIProps;
 }>;
 
 const TooltipHost = ({ content, arrow, children, contentProps, colorTheme, ...props }: Props, ref: React.ForwardedRef<HTMLDivElement>) => {

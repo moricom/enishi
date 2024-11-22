@@ -6,7 +6,7 @@ export type Size = "large" | "medium" | "small" | "x-large" | "x-small";
 export const sizeList: Size[] = ["x-small", "small", "medium", "large", "x-large"];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types
-export type enishiUIProps<P extends Record<string, any> = {}> = Omit<
+export type EnishiUIProps<P extends Record<string, any> = {}> = Omit<
     {
         id?: string;
         className?: string;

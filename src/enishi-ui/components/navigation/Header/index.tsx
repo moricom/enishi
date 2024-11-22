@@ -4,7 +4,7 @@ import { MdMenu } from "@react-icons/all-files/md/MdMenu";
 import { styled } from "styled-components";
 
 import { IconButton } from "@/enishi-ui/components/inputs/IconButton";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.header<{ $headerHeight?: string }>`
     display: flex;
@@ -24,7 +24,7 @@ const Host = styled.header<{ $headerHeight?: string }>`
     overflow: hidden;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     headerHeight?: string;
     toggleDrawer?: () => void;
     drawerVariant: "permanent" | "temporary";

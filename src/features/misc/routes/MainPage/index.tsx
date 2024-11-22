@@ -13,6 +13,7 @@ import { Stepper } from "@/enishi-ui/components/navigation/Stepper";
 import { Page } from "@/components/page/Page";
 import { PageHeader } from "@/components/page/PageHeader";
 import { MatchRegistrationStepFragment } from "@/features/misc/routes/MainPage//MatchRegistrationStepFragment";
+import { MatchResultStepFragment } from "@/features/misc/routes/MainPage/MatchResultStepFragment";
 
 import type { MatchData, User } from "@/features/misc/routes/MainPage/type";
 
@@ -159,6 +160,7 @@ export const MainPage: React.FC = (props) => {
                         }}
                         women={data.women}
                     />
+                    <MatchResultStepFragment matchData={data} />
                 </ViewPager>
             </Content>
         </Host>

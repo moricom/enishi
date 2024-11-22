@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 import { FormControlLabel } from "@/enishi-ui/components/inputs/FormControlLabel";
 import { RadioButton } from "@/enishi-ui/components/inputs/RadioButton";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled(FormControlLabel)<{ $noMargin: boolean }>`
     && {
@@ -18,7 +18,7 @@ const StyledRadioButton = styled(RadioButton)`
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     checked?: boolean;
     label: string;
     checkMarkColor?: string;

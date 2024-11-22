@@ -2,7 +2,7 @@ import React from "react";
 
 import { keyframes, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const rippleKeyframes = keyframes`
     0% {
@@ -55,7 +55,7 @@ const Host = styled.div<{
     position: relative;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     minWidth?: string;
     minHeight?: string;
     width?: string;

@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
-import type { Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { Size, EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -40,7 +40,7 @@ const Host = styled.div<{ size: Size }>`
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     typographyProps?: React.ComponentPropsWithRef<typeof Typography>;
 }>;
 

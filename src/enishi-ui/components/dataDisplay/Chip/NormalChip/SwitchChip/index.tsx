@@ -4,7 +4,7 @@ import { css, styled } from "styled-components";
 
 import { NormalChipHost } from "@/enishi-ui/components/dataDisplay/Chip/NormalChip/Host";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -86,7 +86,7 @@ const ArrowIcon = styled.div<{ $markColor?: string; $position: "left" | "right";
 
 const Content = styled.div``;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     color?: string;
     textColor?: string;
     stopPropagation?: boolean;

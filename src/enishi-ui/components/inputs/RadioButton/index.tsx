@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 
 import { styled } from "styled-components";
 
-import type { ColorTheme, Size, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, Size, EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -78,7 +78,7 @@ const Circle = styled.div<{ $disabled: boolean; $checked: boolean; $colorTheme: 
     transform: ${({ $checked }) => ($checked ? "scale(0.7, 0.7)" : "scale(0, 0)")};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     checked?: boolean;
     onCheck?: () => void;
     colorTheme?: ColorTheme;

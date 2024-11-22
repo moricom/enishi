@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div`
     display: flex;
@@ -14,6 +14,6 @@ const Host = styled.div`
     box-sizing: border-box;
 `;
 
-type Props = enishiUIProps;
+type Props = EnishiUIProps;
 
 export const PanelHeader: React.FC<Props> = ({ children, ...props }) => <Host {...props}>{children}</Host>;

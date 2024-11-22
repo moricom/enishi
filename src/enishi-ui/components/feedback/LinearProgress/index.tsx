@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ $fullWidth: boolean }>`
     display: flex;
@@ -38,7 +38,7 @@ const Line = styled.div<{ $colorTheme: ColorTheme }>`
     transition: all ${({ theme: { transitions } }) => `${transitions.duration.short} ${transitions.easing.easeOut}`};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     // 0 - 100
     progress: number;
     fullWidth?: boolean;

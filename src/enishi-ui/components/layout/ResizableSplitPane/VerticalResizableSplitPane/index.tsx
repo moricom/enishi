@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
 
 import { LeftPane } from "@/enishi-ui/components/layout/ResizableSplitPane/LeftPane";
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div<{ $fullWidth: boolean; $fullHeight: boolean }>`
     height: ${({ $fullHeight }) => ($fullHeight ? "100%" : "initial")};
@@ -47,7 +47,7 @@ const RightPane = styled.div<{ $fullHeight: boolean }>`
     height: ${({ $fullHeight }) => ($fullHeight ? "100%" : "initial")};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     renderLeft: () => React.ReactElement;
     renderRight: () => React.ReactElement;
     rightStyle?: React.CSSProperties;

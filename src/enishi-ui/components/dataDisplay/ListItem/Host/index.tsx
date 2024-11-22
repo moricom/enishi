@@ -2,7 +2,7 @@ import React from "react";
 
 import { css, styled } from "styled-components";
 
-import type { ColorTheme, enishiUIProps } from "@/enishi-ui/components/type";
+import type { ColorTheme, EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -67,7 +67,7 @@ const StyledLi = styled.li<{
         `};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     selected?: boolean;
     button?: boolean;
     indent?: number;

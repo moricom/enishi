@@ -3,9 +3,9 @@ import React from "react";
 import { styled } from "styled-components";
 
 import { LinearLayout } from "@/enishi-ui/components/layout/LinearLayout";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
-type Props = enishiUIProps;
+type Props = EnishiUIProps;
 
 const Host = styled(LinearLayout)``;
 

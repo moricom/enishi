@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled, useTheme } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 import type { DefaultTheme } from "styled-components";
 
@@ -40,7 +40,7 @@ const Host = styled.div<HostProps>`
 `;
 
 type ColorTheme = "accent" | "disabled" | "primary" | "secondary";
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     variant?: keyof DefaultTheme["typography"]["variant"];
     color?: string;
     colorTheme?: ColorTheme;

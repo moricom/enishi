@@ -6,7 +6,7 @@ import { css, styled } from "styled-components";
 import { NormalChipHost } from "@/enishi-ui/components/dataDisplay/Chip/NormalChip/Host";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const Content = styled.div<{ $withCircle: boolean }>`
@@ -91,7 +91,7 @@ const ToggleChipHost = styled(NormalChipHost)<{
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     color?: string;
     textColor?: string;
     stopPropagation?: boolean;

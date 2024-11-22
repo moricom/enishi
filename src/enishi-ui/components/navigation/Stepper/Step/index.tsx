@@ -5,7 +5,7 @@ import { styled, useTheme } from "styled-components";
 import { Typography } from "@/enishi-ui/components/dataDisplay/Typography";
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
 import { LinearLayout } from "@/enishi-ui/components/layout/LinearLayout";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled(LinearLayout)<{ $finished: boolean }>`
     && {
@@ -34,7 +34,7 @@ const Circle = styled.div<{ checked: boolean }>`
     transition: all ${({ theme: { transitions } }) => `${transitions.duration.standard} ${transitions.easing.easeOut}`};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     selected: boolean;
     finished: boolean;
 }>;

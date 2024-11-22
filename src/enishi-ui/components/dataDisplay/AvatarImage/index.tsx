@@ -4,7 +4,7 @@ import { keyframes, styled } from "styled-components";
 
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
 import { Skeleton } from "@/enishi-ui/components/feedback/Skeleton";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const sizes = {
@@ -37,7 +37,7 @@ const sizes = {
 
 const Host = styled.div<{
     $circle: boolean;
-    $size: NonNullable<enishiUIProps["size"]>;
+    $size: NonNullable<EnishiUIProps["size"]>;
     $raised: boolean;
     $noMargin: boolean;
 }>`
@@ -63,7 +63,7 @@ const rippleKeyframes = keyframes`
     }
 `;
 
-const ButtonHost = styled(Host)<{ $circle: boolean; $colorTheme: NonNullable<enishiUIProps["colorTheme"]> }>`
+const ButtonHost = styled(Host)<{ $circle: boolean; $colorTheme: NonNullable<EnishiUIProps["colorTheme"]> }>`
     cursor: pointer;
     position: relative;
     box-sizing: border-box;
@@ -105,7 +105,7 @@ const Image = styled.img<{ $circle: boolean }>`
     overflow: hidden;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     raised?: boolean;
     imageSource?: File | string | null;
     button?: boolean;

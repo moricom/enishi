@@ -4,7 +4,7 @@ import { css, styled } from "styled-components";
 
 import { Tooltip } from "@/enishi-ui/components/dataDisplay/Tooltip";
 import { Ripple } from "@/enishi-ui/components/effect/Ripple";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -105,7 +105,7 @@ const Button = styled.button<{
             : ""};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     stopPropagation?: boolean;
     circle?: boolean;
     checked?: boolean;

@@ -6,7 +6,7 @@ import { FormItemContainer } from "@/enishi-ui/components/inputs/FormItemContain
 import { FormItemLabel } from "@/enishi-ui/components/inputs/FormItemLabel";
 import { FormItemLabelText } from "@/enishi-ui/components/inputs/FormItemLabelText";
 import { InputField } from "@/enishi-ui/components/inputs/TextField/InputField";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useUniqueId } from "@/enishi-ui/hooks/useUniqueId";
 import { mergeRefs } from "@/enishi-ui/lib/mergeRefs";
 
@@ -29,7 +29,7 @@ const Input = styled(InputField)`
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     name?: string;
     labelText?: string;
     placeholder?: string;

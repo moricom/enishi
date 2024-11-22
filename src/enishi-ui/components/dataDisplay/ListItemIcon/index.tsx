@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const sizes = {
     "x-small": {
@@ -52,7 +52,7 @@ const Host = styled.div<{ $size: keyof typeof sizes; $noPadding?: boolean; $noMa
     }
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     size?: keyof typeof sizes;
     noPadding?: boolean;
     noMargin?: boolean;

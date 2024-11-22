@@ -1,13 +1,13 @@
 import type { MatchData, User } from "@/features/misc/routes/MainPage/type";
 
-type UserWithFavoritedBy = User & { favoritedBy: string[] };
+type UserWithFavoritedBy = User & { favoritedBy: User[] };
 
 export const generateFavoritedData = (data: MatchData): { men: UserWithFavoritedBy[]; women: UserWithFavoritedBy[] } => {
-    // 全ユーザーのリストを結合して初期化
+    // 全ユーザーのリストを結合
     const allUsers = [...data.men, ...data.women];
 
     // IDをキーに、誰にお気に入りされたかを記録するマップを作成
-    const favoritedByMap: Record<string, string[]> = allUsers.reduce<Record<string, string[]>>((acc, user) => {
+    const favoritedByMap: Record<string, User[]> = allUsers.reduce<Record<string, User[]>>((acc, user) => {
         acc[user.id] = [];
         return acc;
     }, {});
@@ -15,8 +15,9 @@ export const generateFavoritedData = (data: MatchData): { men: UserWithFavorited
     // 各ユーザーの favoriteList を逆引きしてマップを構築
     allUsers.forEach((user) => {
         user.favoriteList.forEach((targetId) => {
-            if (favoritedByMap[targetId]) {
-                favoritedByMap[targetId].push(user.id);
+            const targetUser = allUsers.find((u) => u.id === targetId);
+            if (targetUser) {
+                favoritedByMap[targetId]?.push(user);
             }
         });
     });

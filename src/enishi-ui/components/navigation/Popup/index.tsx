@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import { css, keyframes, styled } from "styled-components";
 
 import { usePopupRootElement } from "@/enishi-ui/components/navigation/Popup/usePopupRootElement";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 import { useRect } from "@/enishi-ui/hooks/useRect";
 import { mergeRefs } from "@/enishi-ui/lib/mergeRefs";
@@ -76,7 +76,7 @@ const Host = styled.div<{ $visible: boolean; $hidden: boolean; $disableAnimation
     z-index: 1000;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     visible?: boolean;
     onClose?: () => void;
     className?: string;

@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 const Host = styled.div`
     display: flex;
@@ -26,6 +26,6 @@ const Host = styled.div`
     }
 `;
 
-type Props = enishiUIProps;
+type Props = EnishiUIProps;
 
 export const DividerText: React.FC<Props> = ({ className, children }) => <Host className={className}>{children}</Host>;

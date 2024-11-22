@@ -3,7 +3,7 @@ import React, { useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 import { css, styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 import { config } from "@/config";
 import { down } from "@/utils/css/mediaQuery/down";
@@ -47,7 +47,7 @@ const DialogHost = styled.div<{ width?: string; height?: string; $autoScrollable
     `}
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     open: boolean;
     onClose?: () => void;
     width?: string;

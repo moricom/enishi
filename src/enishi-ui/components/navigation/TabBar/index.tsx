@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 import type { TabBarItem } from "@/enishi-ui/components/navigation/TabBarItem";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 import { isNonNullable } from "@/utils/isNonNullable";
 
@@ -25,7 +25,7 @@ const Border = styled.div<{ $selectedIndex: number; $width: string }>`
     transition: all ${({ theme: { transitions } }) => `${transitions.duration.shorter} ${transitions.easing.easeOut}`};
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     selectedValue: string;
     onChange: (value: string) => void;
     children: ReturnType<typeof TabBarItem> | ReturnType<typeof TabBarItem>[];

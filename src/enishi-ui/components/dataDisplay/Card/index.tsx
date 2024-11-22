@@ -2,7 +2,7 @@ import React from "react";
 
 import { styled } from "styled-components";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
 const Host = styled.div<{ $flexGrow: number; $fullHeight: boolean; $fullWidth: boolean; $noMargin: boolean }>`
@@ -20,7 +20,7 @@ const Host = styled.div<{ $flexGrow: number; $fullHeight: boolean; $fullWidth: b
     overflow: auto;
 `;
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     flexibleWidth?: boolean | number;
     fullHeight?: boolean;
     fullWidth?: boolean;

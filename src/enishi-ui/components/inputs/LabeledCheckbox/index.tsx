@@ -4,10 +4,10 @@ import { styled } from "styled-components";
 
 import { Checkbox } from "@/enishi-ui/components/inputs/Checkbox";
 import { FormControlLabel } from "@/enishi-ui/components/inputs/FormControlLabel";
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 import { useHandleEnterKeyDown } from "@/enishi-ui/hooks/useHandleEnterKeyDown";
 
-type Props = enishiUIProps & {
+type Props = EnishiUIProps & {
     readonly checked: boolean;
     readonly onChange?: (checked: boolean) => void;
     readonly label: string;

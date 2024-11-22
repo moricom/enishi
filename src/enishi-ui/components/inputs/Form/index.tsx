@@ -1,10 +1,10 @@
 import React, { useCallback } from "react";
 
-import type { enishiUIProps } from "@/enishi-ui/components/type";
+import type { EnishiUIProps } from "@/enishi-ui/components/type";
 
 import type { PromisableFunction } from "@/types/utils";
 
-type Props = enishiUIProps<{
+type Props = EnishiUIProps<{
     onSubmit: PromisableFunction<() => void>;
 }>;
 
