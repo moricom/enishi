@@ -1,0 +1,87 @@
+{
+    "cSpell.ignorePaths": ["**/node_modules/**", ".git", "*.dll", "package.json", "yarn.lock", ".eslintrc"],
+    "cSpell.words": [
+        "abcdefghijklmnopqrstuvwxyz",
+        "camelcase",
+        "codegen",
+        "contenteditable",
+        "deduplication",
+        "depcruise",
+        "Docgen",
+        "enishi",
+        "esbenp",
+        "Favorited",
+        "firestore",
+        "fullscreen",
+        "gantt",
+        "GraphQLID",
+        "grayscale",
+        "Helvetica",
+        "Hiragino",
+        "immer",
+        "Kaku",
+        "Kanban",
+        "LexoRank",
+        "linebreak",
+        "listitem",
+        "Meiryo",
+        "middlewares",
+        "Neue",
+        "Nominality",
+        "noninteractive",
+        "noreferrer",
+        "Noto",
+        "opentype",
+        "overlayscrollbars",
+        "overscan",
+        "pageview",
+        "palt",
+        "precache",
+        "precaching",
+        "Promisable",
+        "refetchable",
+        "Roboto",
+        "scroller",
+        "shortcodes",
+        "strlen",
+        "SUUID",
+        "systemvars",
+        "testid",
+        "truetype",
+        "Typeahead",
+        "uglifyjs",
+        "unmount",
+        "unsubscriber",
+        "uuidv"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4
+    },
+    "typescript.referencesCodeLens.enabled": true,
+    "[typescript]": {
+        "typescript.preferences.importModuleSpecifier": "non-relative",
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4
+    },
+    "[css]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4
+    },
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#09dafa",
+        "titleBar.activeForeground": "#000000"
+    },
+    "jest.autoRun": "on-save",
+    "jest.coverageFormatter": "DefaultFormatter",
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

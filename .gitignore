@@ -1,0 +1,16 @@
+.env
+
+/coverage/
+/dist/
+/storybook-static/
+/eslint_report.json
+/report.json
+
+### Node ###
+node_modules/
+/yarn-error.log
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride

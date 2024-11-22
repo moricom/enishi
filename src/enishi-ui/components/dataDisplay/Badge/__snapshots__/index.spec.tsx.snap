@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> should merge user classes & spread custom props to the root node 1`] = `
+.c0 {
+  position: absolute;
+  top: initial;
+  bottom: initial;
+  left: initial;
+  right: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F4682;
+  border-radius: 30px;
+  color: #E9EDF3;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0rem 0.5rem 0.1rem 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c0.c0 {
+  border-radius: 50%;
+  min-width: 0.6rem;
+  width: 0.6rem;
+  max-width: 0.6rem;
+  min-height: 0.6rem;
+  height: 0.6rem;
+  max-height: 0.6rem;
+  padding: 0;
+}
+
+<div
+  className="c0 my-badge"
+  data-my-prop="notificationBadge"
+/>
+`;
+
+exports[`<Badge /> should merge user classes & spread custom props to the root node 2`] = `
+.c0 {
+  position: absolute;
+  top: initial;
+  bottom: initial;
+  left: initial;
+  right: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F4682;
+  border-radius: 30px;
+  color: #E9EDF3;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0rem 0.5rem 0.1rem 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c0.c0 {
+  border-radius: 50%;
+  min-width: 0.6rem;
+  width: 0.6rem;
+  max-width: 0.6rem;
+  min-height: 0.6rem;
+  height: 0.6rem;
+  max-height: 0.6rem;
+  padding: 0;
+}
+
+<div
+  className="c0 my-badge"
+  data-my-prop="notificationBadge"
+/>
+`;

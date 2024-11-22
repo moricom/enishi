@@ -1,0 +1,38 @@
+{
+    "name": "enishi",
+    "short_name": "enishi",
+    "description": "enishi",
+    "start_url": "/",
+    "theme_color": "#0B2142",
+    "display": "standalone",
+    "lang": "ja-JP",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "permissions": [],
+    "background_color": "#ffffff",
+    "categories": ["business", "development", "magazines"],
+    "icons": [
+        {
+            "src": "/icons/icon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

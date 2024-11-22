@@ -1,0 +1,210 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module",
+        "project": "./tsconfig.eslint.json"
+    },
+    "extends": [
+        "eslint:all",
+        "plugin:@typescript-eslint/all",
+        "plugin:import/recommended",
+        "plugin:import/react",
+        "plugin:import/typescript",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/strict",
+        "plugin:styled-components-a11y/strict",
+        "plugin:react/all",
+        "prettier"
+    ],
+    "plugins": ["@typescript-eslint", "react-hooks", "jsx-a11y"],
+    "rules": {
+        "sort-imports": [
+            "error",
+            {
+                "ignoreDeclarationSort": true
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal", "unknown", "type"],
+                "pathGroups": [
+                    {
+                        "pattern": "react",
+                        "group": "builtin"
+                    },
+                    {
+                        "pattern": "react-dom/**",
+                        "group": "builtin"
+                    },
+                    {
+                        "pattern": "@/enishi-ui/**",
+                        "group": "external",
+                        "position": "after"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["react"],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                },
+                "warnOnUnassignedImports": true
+            }
+        ],
+        "import/no-default-export": ["error"],
+        "max-lines": ["error", { "max": 500, "skipComments": true }],
+        "max-lines-per-function": ["error", { "max": 300 }],
+        "one-var": ["error", "never"],
+        "no-underscore-dangle": ["error", { "allowAfterThis": true, "allow": ["__local__", "__typename"] }],
+        "capitalized-comments": ["error", "always", { "ignorePattern": "prettier-ignore|cspell:disable|cspell:enable|webpackChunkName:*" }],
+        "no-console": ["error", { "allow": ["warn", "error", "info", "group", "groupEnd"] }],
+        "no-warning-comments": ["warn"],
+        "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+        "@typescript-eslint/consistent-type-assertions": ["error", { "assertionStyle": "angle-bracket" }],
+        "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }],
+        "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+        "react/jsx-max-depth": ["error", { "max": 7 }],
+        "react/no-multi-comp": ["error", { "ignoreStateless": true }],
+        // For graphql-tag
+        "no-inline-comments": ["error", { "ignorePattern": "webpackChunkName:*" }],
+        // Overwrite with @typescript-eslint
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            { "destructuredArrayIgnorePattern": "^_", "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error", { "ignoreTypeReferences": true }],
+        "no-magic-numbers": "off",
+        "@typescript-eslint/no-magic-numbers": [
+            "error",
+            {
+                "ignore": [0, 1, -1, 2, 100, -100],
+                "ignoreArrayIndexes": true,
+                "enforceConst": true,
+                "ignoreDefaultValues": true,
+                "ignoreTypeIndexes": true
+            }
+        ],
+        // Disable rules
+        "no-undefined": "off",
+        "id-length": "off",
+        "camelcase": "off",
+        "sort-keys": "off",
+        "no-ternary": "off",
+        "no-nested-ternary": "off",
+        "no-floating-promises": "off",
+        "no-void": "off",
+        "no-duplicate-imports": "off",
+        "init-declarations": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-dynamic-delete": "off",
+        "@typescript-eslint/no-unnecessary-condition": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/prefer-readonly-parameter-types": "off",
+        "@typescript-eslint/no-type-alias": "off",
+        "@typescript-eslint/init-declarations": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/key-spacing": "off",
+        "@typescript-eslint/class-methods-use-this": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "react/jsx-no-literals": "off",
+        "react/forbid-component-props": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-set-state": "off",
+        "jsx-a11y/accessible-emoji": "off",
+        "styled-components-a11y/iframe-has-title": "off",
+        "styled-components-a11y/html-has-lang": "off",
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": [
+                    {
+                        "group": ["./", "../"],
+                        "message": "Using relative paths is prohibited"
+                    },
+                    {
+                        "group": ["?!(react)"],
+                        "importNames": ["__local__"],
+                        "message": "__local__ is a variable for test use only"
+                    },
+                    {
+                        "group": ["uuid", "!@/lib/uuid"],
+                        "message": "Please use @/lib/uuid instead of uuid"
+                    }
+                ]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["*.tsx"],
+            "rules": {
+                "@typescript-eslint/consistent-type-assertions": ["error", { "assertionStyle": "as" }]
+            }
+        },
+        {
+            "files": ["*.ts"],
+            "rules": {
+                "max-statements": ["error", { "max": 20 }]
+            }
+        },
+        {
+            "files": ["*.spec.ts", "*.spec.tsx"],
+            "rules": {
+                "@typescript-eslint/no-magic-numbers": ["off"],
+                "@typescript-eslint/no-non-null-assertion": ["off"],
+                "no-restricted-imports": ["off"],
+                "max-lines": ["off"]
+            }
+        },
+        {
+            "files": ["src/features/**/*"],
+            "rules": {
+                // feature間のimportであっても @/features/*/* を禁止するが、eslint上での表現ができないため
+                // feature内でのimportでエラーを発生させないよう無効化
+                // これらはdependency cruiserでコード品質を保つようする
+                "no-restricted-imports": [
+                    "error",
+                    {
+                        "patterns": [
+                            {
+                                "group": ["./", "../"],
+                                "message": "Using relative paths is prohibited"
+                            },
+                            {
+                                "group": ["*"],
+                                "importNames": ["__local__"],
+                                "message": "__local__ is a variable for test use only"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/resolver": {
+            "webpack": {
+                "alwaysTryTypes": true
+            }
+        },
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx", "index.d.ts"]
+        },
+        "react": {
+            "version": "detect"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- <base href="/"/> -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="theme-color" content="#1F4682" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <link rel="icon" type="image/png" href="<%= require('./assets/favicon.png')%>" />
+        <link rel="manifest" href="/manifest.json" />
+        <!-- fonts: start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- fonts: end -->
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <div id="enishi-loading-container">
+            <img src="<%= require('./assets/images/loading.gif')%>" />
+        </div>
+        <div id="root"></div>
+        <div id="tooltip-root"></div>
+        <div id="dialog-root"></div>
+        <div id="popup-root"></div>
+        <style>
+            #enishi-loading-container > img {
+                box-sizing: border-box;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 12rem;
+                object-fit: cover;
+            }
+        </style>
+    </body>
+</html>

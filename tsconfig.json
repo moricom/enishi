@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "types": ["node"],
+        "baseUrl": "./",
+        "plugins": [
+            {
+                "name": "@styled/typescript-styled-plugin"
+            }
+        ],
+        "target": "ES2021",
+        "module": "ESNext",
+        "lib": ["dom", "esnext", "WebWorker"],
+        "jsx": "react",
+        "strict": true,
+        "noImplicitAny": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "typeRoots": ["node_modules/@types", "src/types/global"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "noErrorTruncation": true,
+        "removeComments": false,
+        "noEmitOnError": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": ["./src/**/*", "static"],
+    "exclude": ["node_modules"]
+}
